@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+</head>
+
+<body>
+
+<header>
+Customer Analytics Dashboard 📊
+</header>
+
+<div class="container">
+
+<h2 style="text-align:center;color:#6c63ff">
+Review Insights
+</h2>
+
+<input id="searchBox" placeholder="Search review">
+
+<select id="filter">
+
+<option value="All">All</option>
+<option value="Positive">Positive</option>
+<option value="Negative">Negative</option>
+<option value="Neutral">Neutral</option>
+
+</select>
+
+<canvas id="chart"></canvas>
+
+<h3>Bar Chart</h3>
+
+<canvas id="barChart"></canvas>
+
+<p>Total Reviews: <span id="total"></span></p>
+
+<p>Positive: <span id="positive"></span></p>
+
+<p>Negative: <span id="negative"></span></p>
+
+<p>Neutral: <span id="neutral"></span></p>
+
+<h3>Customer Reviews</h3>
+
+<table id="reviewTable">
+
+<tr>
+<th>Name</th>
+<th>Review</th>
+<th>Rating</th>
+<th>Date</th>
+<th>Sentiment</th>
+</tr>
+
+</table>
+
+<button onclick="downloadPDF()">
+Export PDF 📄
+</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
