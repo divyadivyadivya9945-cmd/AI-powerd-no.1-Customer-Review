@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>AI Customer Review</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+AI Powered Customer Review Intelligence 🤖
+</header>
+
+<div class="container">
+
+<h2 style="text-align:center;color:#6c63ff">
+Customer Feedback Analyzer
+</h2>
+
+<input id="name" placeholder="Customer Name">
+
+<textarea id="review" placeholder="Enter review"></textarea>
+
+<label>Rating ⭐</label>
+
+<select id="rating">
+
+<option value="5">⭐⭐⭐⭐⭐</option>
+<option value="4">⭐⭐⭐⭐</option>
+<option value="3">⭐⭐⭐</option>
+<option value="2">⭐⭐</option>
+<option value="1">⭐</option>
+
+</select>
+
+<button onclick="analyzeReview()">
+Analyze Review
+</button>
+
+<div id="result"></div>
+
+<a href="dashboard.html">
+<button>
+View Dashboard 📊
+</button>
+</a>
+
+<button onclick="logout()">
+Logout
+</button>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
